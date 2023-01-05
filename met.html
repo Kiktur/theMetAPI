@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MET API Page</title>
-   <link rel="stylesheet" href="metStyles.css">
+    <title>MET API</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header id="header" class="red-scheme">
@@ -14,29 +14,112 @@
     </header>
     
 <div class="input-section">
-        <label class="input-label" for="object-id-input">Object ID: </label>
-        <input type="number" class="number-input" id="object-id-input">
-        <button id="fetch-button" class="fetch-button red-scheme" onclick="getObject()">Fetch Art</button>
+       <!-- <label class="input-label" for="object-id-input">Object ID: </label> -->
+        <input type="text" class="tag-input" id="object-tag-input" onchange="update()" placeholder="Search the collection">
+        <button id="fetch-button" class="fetch-button red-scheme" onclick="search()">Search</button>
 </div>
 
-<div class="main-art-container">
-    <img id="object-image" src="">
-    <div class="art-info-container hidden" id="art-container">
-        <p class="art-info hidden" id="image-backup"></p>
-        <p class="art-info hidden" id="art-title"></p>
-        <p class="art-info hidden" id="country-info"></p>
-        <p class="art-info hidden" id="culture-info"></p>
-        <p class="art-info hidden" id="dimension-info"></p>
-        <p class="art-info hidden" id="medium-info"></p>
-        <p class="art-info hidden" id="department-info"></p>
-    </div><!--art-info-container-->
+<p id="results-text"></p>
+
+<div id="search-results" class="hidden">
+    <a href="#" class="result-item hidden" id="result-1">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-2">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-3">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-4">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-5">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-6">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-7">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-8">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-9">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-10">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-11">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+
+    <a href="#" class="result-item hidden" id="result-12">
+        <img src="" class="result-image" alt="">
+        <div class="result-text">
+            <p class="result-title"></p>
+            <p class="result-info"></p>
+        </div>
+    </a>
+</div>
 
     
-</div><!--main-art-container-->
-
-
-
-    
-    <script src="metScript.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
